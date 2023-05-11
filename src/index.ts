@@ -19,8 +19,17 @@ window.Webflow.push(() => {
       fixedWidth: '20vw',
       gap: '1.25rem',
       arrows: false,
+      pagination: false,
       autoScroll: {
-        speed: 0.1,
+        speed: 0.08,
+      },
+      breakpoints: {
+        992: {
+          fixedWidth: '33.333vw',
+        },
+        480: {
+          fixedWidth: '50vw',
+        },
       },
     }).mount(window.splide.Extensions);
   }
